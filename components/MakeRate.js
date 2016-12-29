@@ -14,7 +14,7 @@ class MakeRate extends React.Component {
 
 		return(
 			<div style={wrap_style}>
-				<div>make rate</div>
+				<div>canvas</div>
 			</div>
 		);
 	}
