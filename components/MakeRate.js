@@ -15,6 +15,7 @@ class MakeRate extends React.Component {
 		return(
 			<div style={wrap_style}>
 				<div>canvas</div>
+				<div>canvas</div>
 			</div>
 		);
 	}
