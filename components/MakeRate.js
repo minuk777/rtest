@@ -5,12 +5,11 @@ class MakeRate extends React.Component {
 	render() {
 
 		let wrap_style = {
-			backgroundColor:"grey",
+			backgroundColor:"yellow",
 			width:300,
 			margin:"auto",
 			padding:5,
-			color:"#FAFAFA",
-			display:"none"
+			color:"#FAFAFA"
 		};
 
 		return(

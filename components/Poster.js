@@ -7,6 +7,13 @@ class Poster extends React.Component {
 			poster_url : "../img/default-poster.jpg"
 		};
 	}
+
+	componentDidMount() {
+		if(this.props.img_url){
+			this.setState({poster_url: this.props.img_url});
+		}
+	}
+
 	render() {
 
 		let wrap_style = {
@@ -22,12 +29,8 @@ class Poster extends React.Component {
 			height:150
 		}
 
-		if(this.props.img_url){
-			this.setState({poster_url: this.props.img_url});
-		}
-
 		return(
-			<div style={wrap_style}>
+			<div style={wrap_style} onClick={this.props.onClick}>
 				<div>Title</div>
 				<img style={poster_style} src={this.state.poster_url} />
 			</div>
